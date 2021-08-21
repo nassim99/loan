@@ -1371,10 +1371,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@nassim99/react-native-gauge@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@nassim99/react-native-gauge/-/react-native-gauge-0.0.4.tgz#210e690e56864268d55c646b27ccc2d09f800c7d"
-  integrity sha512-Yxqboj9gm69w6C9f3NVXXRV9yU4+OQIYugVd1EX0N4Dy2/zYjcaFoxKtDD9YGzub3gLYG709p9yy/C4Wu2UskA==
+"@nassim99/react-native-gauge@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@nassim99/react-native-gauge/-/react-native-gauge-0.0.8.tgz#ec5102a28def4220b5661ff36cfd333d12ec4e38"
+  integrity sha512-S2W84z+qcOeGCVimd9gjnaiuuf+No40Zj0UIxWptgeFF5PFnOC4dSLvJPaNCB2xl5qJ8YdcXOi7s7JzH6ooYnQ==
   dependencies:
     react-native-svg "^12.1.1"
 

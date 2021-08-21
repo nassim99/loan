@@ -8,7 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@nassim99/react-native-gauge": "^0.0.4",
+    "@nassim99/react-native-gauge": "^0.0.8",
     "@react-native-community/art": "^1.2.0",
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/stack": "^6.0.7",

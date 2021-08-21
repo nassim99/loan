@@ -18,7 +18,7 @@ import ScrollView from 'components/scrollview';
 import HeaderItem from 'components/header-item';
 
 import Lang from 'local/lang';
-import { BLACK, LightBlue, LightGray, Red } from 'styles/colors';
+import { BLACK, GRAY, LightBlue, LightGray, Red } from 'styles/colors';
 
 import GaugeSVG from '@nassim99/react-native-gauge';
 
@@ -97,25 +97,22 @@ const LoanScreen: React.FC<LoanScreenProps> = ({ navigation }) => {
                 }>
                 <GaugeSVG
                   size={WINDOW_WIDTH / 1.5}
-                  insideTextColor={'purple'}
-                  gaugeColor={BLACK}
+                  gaugeColor={GRAY}
                   gaugeValueColor={LightBlue}
                   gaugeStroke={3}
                   gaugeValueStroke={3}
-                  insideComponent={
-                    <Column style={styles.gaugeContentContainer}>
-                      <Text>{Lang.remainingAmount}</Text>
-                      <Text size={18} bold>
-                        {item.present_balance}
-                      </Text>
-                      <Column style={styles.textStatus} />
-                      <Text size={14} color={Red} bold>
-                        {item.status === 'A' ? Lang.active : Lang.closed}
-                      </Text>
-                    </Column>
-                  }
-                  value={(item.present_balance / item.total_loan_amount) * 100}
-                />
+                  value={(item.present_balance / item.total_loan_amount) * 100}>
+                  <Column style={styles.gaugeContentContainer}>
+                    <Text>{Lang.remainingAmount}</Text>
+                    <Text size={18} bold>
+                      {item.present_balance}
+                    </Text>
+                    <Column style={styles.textStatus} />
+                    <Text size={14} color={Red} bold>
+                      {item.status === 'A' ? Lang.active : Lang.closed}
+                    </Text>
+                  </Column>
+                </GaugeSVG>
               </Column>
               <Text style={styles.staffCash} size={20}>
                 {Lang.staffCash}
